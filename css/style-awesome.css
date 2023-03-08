@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.awesome-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.awesome-title {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 104px;
+}
+
+.awesome-title::after {
+    content: "";
+    display: block;
+    background-color: #EC7979;
+    width: 170px;
+    height: 1px;
+    margin: 54px auto 0 auto;
+}
+
+.awesome-description {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    padding-top: 40px;
+}
+
+.cards {
+    padding: 110px 0 58px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+}
+
+.card-picture {
+    height: 92px;
+    width: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-picture__lamp {
+    width: 65px;
+    height: 65px;
+}
+
+.card-picture__keyboard {
+    height: 46px;
+    width: 66px;
+}
+
+.card-picture__lightning {
+    height: 66px;
+    width: 44px;
+}
+
+.card-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    padding: 73px 0 42px 0;
+}
+
+.card-description {
+    width: 370px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    white-space: pre-line;
+}

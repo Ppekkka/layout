@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.customers-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+
+.customers-title {
+    font-size: 36px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    line-height: 42px;
+}
+
+.customers-title:after {
+    content: "";
+    display: block;
+    background-color: #EC7979;
+    width: 170px;
+    height: 1px;
+    margin: 50px auto;
+}
+
+.customers-description {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    padding-bottom: 83px;
+}
+
+.customers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.customers-about {
+    width: 370px;
+}
+
+.customers-text {
+    padding: 38px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+}
+
+.customers-text-wrapper::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    margin-left: 70px;
+}
+
+.customer {
+    padding-top: 46px;
+    width: 370px;
+    display: flex;
+}
+
+.man {
+    width: 370px;
+    padding-left: 30px;
+}
+
+.customers-img {
+    width: 70px;
+    height: 70px;
+}
+
+.name {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    white-space: row;
+}
+
+.manager {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 30px;
+}

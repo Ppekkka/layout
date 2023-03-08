@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 0;
+}
+
+.social_media {
+    background-color: #F8EFEF;
+}
+
+.social_media-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_media-text {
+    width: 470px;
+}
+
+.social_media-title {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #333333;
+    padding: 14px 0;
+}
+
+.social_media-description {
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    padding: 18px 0;
+}
+
+.social_media-icons {
+    width: 706px;
+}
+
+.social_media-icons__list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-link {
+    height: 60px;
+    padding: 45px 0;
+}
+
+.fa-brands {
+    font-size: 60px;
+    color: #CCCCCC;
+    font-style: 90;
+    font-weight: 90;
+}
+
+.fa-sharp {
+    color: #CCCCCC;
+    font-size: 60px;
+}

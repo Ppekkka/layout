@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+}
+
+.wrapper-header {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    height: 74px;
+    left: 115px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-elem {
+    white-space: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 28px;
+}
+
+.list-elem:last-child {
+    padding-right: 0;
+}

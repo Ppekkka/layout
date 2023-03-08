@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing {
+    background-color: #F5F5F5;
+}
+
+.pricing-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.pricing-title {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 50px 0;
+}
+
+.pricing-line {
+    border-bottom: 1px solid #EC7979;
+    width: 170px;
+    margin: 0 auto;
+}
+
+.pricing-description {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    color: #86878B;
+}
+
+.pricing-tables {
+    padding: 59px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-table {
+    width: 370px;
+    padding-top: 39px;
+}
+
+.pricing-table.up {
+    padding-top: 0;
+    margin-top: 19px;
+    box-shadow: 0px 4px 10px 0px #33333333;
+    align-self: flex-start;
+}
+
+.pricing-table__list {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.pricing-table__list__item {
+    border: 1px solid #F5F5F5;
+    text-align: center;
+    background-color: white;
+    padding: 14px 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+.pricing-table-list-item.first {
+    background-color: #333333;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.pricing-table-list-item.second {
+    background-color: #333333;
+    color: white;
+    padding: 29px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.pricing-table-list-item.third {
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
