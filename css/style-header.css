@@ -37,6 +37,12 @@
     font-size: 14px;
     line-height: 19px;
     padding: 28px;
+    transition: 0.3s;
+}
+
+.nav-elem:hover{
+    background-color: #EC7979;
+    transition: 0.3s;
 }
 
 .list-elem:last-child {

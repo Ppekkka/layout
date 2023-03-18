@@ -30,3 +30,13 @@
     color: rgba(255, 255, 255, 0.5);
     padding-bottom: 27px;
 }
+
+svg{
+    transition: 0.3s;
+}
+
+svg:hover{
+    transform: scale(1.5, 1.5);
+    transition: 0.3s;
+}
+

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style-customers.css">
     <link rel="stylesheet" href="css/style-banner.css">
     <link rel="stylesheet" href="css/style-footer.css">
+    <link rel="stylesheet" href="css/style-contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -55,18 +56,27 @@
             </div>
             <div class="main-table">
                 <h4 class="main-table-name">FREE</h4>
-                <div class="main-table-elem">
-                    <p class="input-type">Name</p>
-                    <input type="text" class="table-input">
-                </div>
-                <div class="main-table-elem">
-                    <p class="input-type">Email</p>
-                    <input type="text" class="table-input">
-                </div>
-                <div class="main-table-elem">
-                    <p class="input-type">Password</p>
-                    <input type="text" class="table-input">
-                </div>
+
+
+                <form action="#">
+
+                    <div class="">
+                        <label for="username" class="table-lable">Name</label>
+                        <input type="text" name="userName" id="username" value="" class="table-input" required>
+                    </div>
+
+                    <div class="">
+                        <label for="usermail" class="table-lable">Email</label>
+                        <input type="email" name="userEmail" id="usermail" value="" class="table-input" required>
+                    </div>
+
+                    <div class="">
+                        <label for="userpassword" class="table-lable">Password</label>
+                        <input type="password" name="userPassword" id="userpassword" value="" class="table-input" required>
+                    </div>
+
+                </form>
+
                 <a href="#" class="table-link">Get Started</a>
             </div>
     </section>
@@ -311,6 +321,40 @@
             <div class="link-banner-wrapper"><a href="#" class="link-banner">Download</a></div>
         </div>
     </section>
+
+    <section class="contact">
+
+        <div class="contact-wrapper">
+
+            <h2 class="contact-title">contact us</h2>
+            <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <form action="#" class="contact-form">
+
+                <div class="form__wrapper">
+
+                    <div class="input-wrapper">
+                        <input type="text" name="userName" id="username" value="" placeholder="Name" class="contact-input" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" name="userEmail" id="usermail" value="" placeholder="Email" class="contact-input" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" name="userPassword" id="userpassword" value="" placeholder="Password" class="contact-input" required>
+                    </div>
+
+                </div>
+
+                <div class="form__wrapper">
+                    <textarea name="message" id="usermessage" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer-icons">
