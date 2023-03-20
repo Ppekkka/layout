@@ -77,7 +77,7 @@
     color: #86878B;
 }
 
-.pricing-table-list-item.first {
+.pricing-table__list__item.first {
     background-color: #333333;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -86,7 +86,7 @@
     line-height: 33px;
 }
 
-.pricing-table-list-item.second {
+.pricing-table__list__item.second {
     background-color: #333333;
     color: white;
     padding: 29px 0;
@@ -96,11 +96,104 @@
     line-height: 42px;
 }
 
-.pricing-table-list-item.third {
+.pricing-table__list__item.third {
     background-color: #333333;
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+@media(max-width:1200px) {
+    .pricing-wrapper {
+        width: 97%;
+        padding-top: 50px;
+    }
+
+    .pricing-title {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 46px 0;
+    }
+
+    .pricing-title::after {
+        width: 143px;
+    }
+
+    .pricing-description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .pricing-tables {
+        padding-top: 32px;
+    }
+
+    .pricing-table {
+        width: 317px;
+    }
+
+    .pricing-table__list__item {
+        padding: 12px 0;
+    }
+
+    .pricing-table__list__item.second {
+        padding: 23px;
+    }
+}
+
+@media(max-width:1024px) {
+    .pricing-table {
+        width: 32%;
+    }
+}
+
+@media(max-width: 768px) {
+    .pricing-wrapper {
+        width: 288px;
+        padding-top: 0;
+    }
+
+    .pricing-title::after {
+        width: 134px;
+    }
+
+    .pricing-description {
+        font-size: 13px;
+        line-height: 15px;
+        width: 288px;
+        text-align: center;
+    }
+
+    .pricing-tables {
+        flex-direction: column;
+        padding-top: 0;
+        padding: 0 0 26px 0;
+    }
+
+    .pricing-table {
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .pricing-table__list__item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .pricing-table__list__item.first {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .pricing-table__list__item.second {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .pricing-table__list__item.third {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }

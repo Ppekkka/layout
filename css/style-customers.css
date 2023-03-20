@@ -106,3 +106,106 @@
     line-height: 21px;
     padding-top: 30px;
 }
+
+@media(max-width:1200px) {
+    .customers-wrapper {
+        width: 97%;
+        padding-top: 50px;
+    }
+
+    .customers-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .customers-title:after {
+        width: 142px;
+    }
+
+    .customers-description {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 32px;
+    }
+
+    .customers-text {
+        padding: 50px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        width: 321px;
+    }
+
+    .customers-wrapper {
+        padding-bottom: 0;
+    }
+
+    .customers-about {
+        width: 317px;
+        padding-bottom: 64px;
+    }
+
+    .customer {
+        width: 316px;
+    }
+
+    .customers-img {
+        width: 63px;
+        height: 63px;
+    }
+
+    .man {
+        padding-left: 22.54px;
+    }
+
+    .name {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .manager {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 24px;
+    }
+
+    .customers-tex.customers-text-wrapper::after {
+        border-top: 25.7px solid #E2E2E2;
+        margin-left: 70px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .customers-wrapper {
+        width: 288px;
+    }
+
+    .customers-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .customers-title:after {
+        width: 134px;
+        margin: 34px auto 24px auto;
+    }
+
+    .customers-description {
+        font-size: 13px;
+        line-height: 15px;
+        width: 288px;
+        text-align: center;
+    }
+
+
+    .card{
+        width: 100%;
+    }
+
+    
+    .customers-text {
+        width: 288px;
+        padding: 50px 19px;
+    }
+}

@@ -8,7 +8,7 @@
 
 .design {
     background-image: url("../assets/background.png");
-    background-size: 100% 100%;
+    background-position:center;
     position: relative;
 }
 
@@ -122,17 +122,17 @@
     padding-top: 33px;
 }
 
-.input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
 }
 
-.input:focus ~ .placeholder {
-  color: #dc2f55;
+.input:focus~.placeholder {
+    color: #dc2f55;
 }
 
 
@@ -145,7 +145,9 @@
     font-size: 18px;
 }
 
-.table-input:active, :hover, :focus{
+.table-input:active,
+:hover,
+:focus {
     outline: 0;
 }
 
@@ -163,4 +165,104 @@
     padding: 20px 0 20px 0;
     width: 100%;
     border-radius: 0px 0px 10px 10px;
+}
+
+@media(max-width:1200px) {
+    .wrapper-design {
+        width: 81%;
+        padding: 137.15px 0 106px 0;
+    }
+
+    .design-content {
+        width: 454.36px;
+    }
+
+    .main-title {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 54.08px;
+    }
+
+    .main-title::after {
+        width: 115.28px;
+        margin-top: 41.5px;
+    }
+
+    .main-description {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 31px 0;
+    }
+
+    .main-content_link {
+        padding: 12px 43.5px;
+    }
+
+    .main-table {
+        width: 398px;
+        margin-right: -46.36px;
+    }
+
+    .main-table-name {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .table-input {
+        width: 298px;
+    }
+
+    .table-lable {
+        padding-top: 52px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .wrapper-design {
+        flex-direction: column;
+        align-items: center;
+        width: 288px;
+        padding: 32px 0 50px 0;
+    }
+
+    .design-content {
+        width: 100%;
+    }
+
+    .main-logo {
+        width: 0;
+        height: 0;
+    }
+
+    .main-title {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .main-title::after {
+        width: 134px;
+        margin: 43.88px auto 0 auto;
+    }
+
+    .main-description {
+        white-space: normal;
+        text-align: center;
+        padding: 42px 0;
+    }
+
+    .main-content_link {
+        padding: 12px 98px;
+    }
+
+    .main-table {
+        width: 100%;
+        margin: 83px 0 0 0;
+    }
+
+    .table-input{
+        width: 240px;
+    }
 }

@@ -8,7 +8,7 @@
 
 .banner {
     background-image: url("../assets/city.png");
-    background-size: 100% 100%;
+    background-position: center;
     position: relative;
 }
 
@@ -73,4 +73,56 @@
     padding: 17px 120px;
     white-space: none;
     text-decoration: none;
+}
+
+@media(max-width:1200px) {
+    .wrapper-banner {
+        width: 81%;
+    }
+
+    .title-banner {
+        font-size: 24px;
+        line-height: 28px;
+        padding-top: 96px;
+    }
+
+    .title-banner::after {
+        width: 142px;
+        margin: 46px auto 32px auto;
+    }
+
+    .description-banner {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .link-banner-wrapper {
+        width: max-content;
+        padding-top: 49px;
+    }
+
+    .link-banner {
+        padding: 17px 94px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .banner {
+        background-size: contain;
+    }
+
+    .wrapper-banner{
+        width: 288px;
+        padding-bottom: 88px;
+    }
+
+    .title-banner::after{
+        width: 134px;
+        margin: 46px auto 16px auto;
+    }
+
+    .link-banner{
+        padding: 11px 98px;
+    }
 }

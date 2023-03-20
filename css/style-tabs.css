@@ -12,8 +12,11 @@
     margin: 0 auto;
 }
 
+.buttons {
+    display: flex;
+}
+
 .button {
-    display: inline-block;
     padding: 10px 80px;
     margin-bottom: -1px;
 }
@@ -34,13 +37,14 @@
 .tabs__main-content {
     width: 100%;
     border: 1px solid #C6CBCD;
+    display: flex;
+    justify-content: space-between;
 }
 
 .tabs-content {
     vertical-align: top;
     width: 570px;
     padding: 0 30px 0 100px;
-    display: inline-block;
 }
 
 .tabs-title {
@@ -57,12 +61,10 @@
     width: 570px;
     font-size: 17px;
     padding-bottom: 30px;
-    line-height: auto;
     white-space: pre-line;
 }
 
 .tabs-download {
-    width: 270px;
     width: 270px;
     height: 58px;
     background-color: #EC7979;
@@ -79,17 +81,98 @@
     font-size: 18px;
 }
 
-.pic {
-    display: inline-block;
-    width: 470px;
-    height: 100%;
-    object-position: right;
-    margin-left: 158px;
+@media(max-width:1200px) {
+    .tabs-wrapper {
+        width: 97%;
+    }
+
+    .button {
+        padding: 10px 67px;
+    }
+
+    .tabs-content {
+        width: 482.89px;
+        padding: 28px 0 0 84.68px;
+    }
+
+    .tabs-title {
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 0;
+    }
+
+    .tabs-text {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 38px;
+    }
+
+    .tabs-download {
+        width: 231.87px;
+        padding-bottom: 54px;
+    }
+
+    .tabs-img {
+        width: 430px;
+    }
 }
 
-.pic-img {
-    width: 100%;
-    margin-top: 0;
-    object-fit: content-box;
-    height: 100%;
+@media(max-width: 1024px) {
+    .tabs-img {
+        width: 38%;
+    }
+}
+
+@media(max-width: 876px) {
+    .tabs-img {
+        width: 0;
+    }
+
+    .tabs-content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .tabs-text {
+        white-space: normal;
+        text-align: center;
+        width: normal;
+    }
+
+    .tabs-download {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .tabs-wrapper {
+        width: 288px;
+    }
+
+    .button {
+        padding: 10px 29px;
+    }
+
+    .tabs-title {
+        font-size: 18px;
+        line-height: 25px;
+        white-space: normal;
+        text-align: center;
+        width: 242px;
+    }
+
+    .tabs-text {
+        width: 242.74px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .tabs-download{
+        width: 242.74px;
+        height: 50px;
+    }
 }

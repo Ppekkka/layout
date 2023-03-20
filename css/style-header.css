@@ -6,8 +6,11 @@
     box-sizing: border-box;
 }
 
-.header {
+header {
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .wrapper-header {
@@ -16,11 +19,11 @@
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo-header {
     height: 74px;
-    left: 115px;
 }
 
 .list {
@@ -28,8 +31,12 @@
     list-style-type: none;
 }
 
+.nav {
+    position: absolute;
+    right: 0;
+}
+
 .nav-elem {
-    white-space: none;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans';
@@ -40,11 +47,53 @@
     transition: 0.3s;
 }
 
-.nav-elem:hover{
+.nav-elem:hover {
     background-color: #EC7979;
     transition: 0.3s;
 }
 
 .list-elem:last-child {
     padding-right: 0;
+}
+
+.menu-button {
+    background-color: black;
+    width: 0;
+    border: 0;
+}
+
+@media(max-width:1200px) {
+    .wrapper-header {
+        width: 81%;
+    }
+
+    .nav {
+        margin-right: -78px;
+    }
+}
+
+@media(max-width: 768px) {
+    .nav-elem {
+        font-size: 0;
+        padding: 0;
+    }
+
+    .menu {
+        width: 24px;
+        height: 3px;
+        background-color: white;
+        display: inline-block;
+        margin-top: 4px;
+    }
+
+    .menu-wrapper {
+        width: 3.6px;
+        height: 18px;
+        margin-top: -4px;
+    }
+
+    .menu-button {
+        border: 0;
+        background-color: black
+    }
 }

@@ -88,11 +88,106 @@
 }
 
 .card-description {
-    width: 370px;
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     white-space: pre-line;
+}
+
+@media(max-width:1200px) {
+    .awesome-wrapper {
+        width: 100%;
+    }
+
+    .awesome-title {
+        font-size: 24px;
+        line-height: 28px;
+        padding-top: 96px;
+    }
+
+    .awesome-title::after {
+        width: 142px;
+        margin-top: 24px;
+    }
+
+    .awesome-description {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 32px;
+    }
+
+    .cards {
+        padding-top: 65.72px;
+    }
+
+    .card {
+        width: 317px;
+    }
+
+    .card-picture {
+        width: 79.55px;
+        height: 79.55px;
+    }
+
+    .card-picture__lamp {
+        width: 56.46px;
+        height: 56.46px;
+    }
+
+    .card-picture__keyboard {
+        width: 57.07px;
+        height: 39.78px;
+    }
+
+    .card-picture__lightning {
+        width: 38.05px;
+        height: 57.07px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 33.72px;
+    }
+
+    .card-description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .awesome-wrapper {
+        width: 288px;
+    }
+
+    .awesome-title {
+        padding-top: 50px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .awesome-title::after {
+        width: 134px;
+    }
+
+    .awesome-description {
+        font-size: 13px;
+        line-height: 15px;
+        width: 288px;
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0;
+    }
+    .card{
+        padding-top: 83.72px;
+        width: 100%;
+    }
 }
